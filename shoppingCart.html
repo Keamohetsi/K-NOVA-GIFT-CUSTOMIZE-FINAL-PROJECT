@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>STORE DATA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="rating" content="General">
+<meta name="expires" content="never">
+<meta name="language" content="English, EN">
+<meta name="description" content="Shopping cart project with HTML and JavaScript">
+<meta name="keywords" content="HTML,CSS,JavaScript, html5 session storage, html local storage">
+
+<script src="storeData.js"></script>
+<link rel="stylesheet" href="shoppingCARTstyle.css">
+<a href="./signIN.html">Go to sign in</a>
+<a href="./signup.html"></a>
+<a href="./product.html">Go to Products</a>
+<a href="./signIN.html"></a>
+    <a href="./signin.js"></a>
+    <a href="./shoppingCARTstyle.css"></a>
+    <a href="connectionToDatabase.php"></a>
+    <a href="shoppingCart.html"></a>
+    <a href="storeData.js"></a>
+    <a href="accessDBonPHP.html">Go to DATABASE</a>
+    <a href="homeFinal.html">Go to home</a>
+    <a href="cart.js"></a>
+
+</head>
+
+<form name="SHOPPING LIST">
+    <fieldset>
+        <legend>Shopping cart</legend>
+        <label>Item: <input type="text" name="name"></label>
+        <label>Quantity: <input type="text" name="data"></label>
+
+        <input type="button" value="Save"   onclick="SaveItem()">
+        <input type="button" value="Update" onclick="ModifyItem()">
+        <input type="button" value="Delete" onclick="RemoveItem()">
+    </fieldset>
+
+    <div id="items_table">
+        <h2>Shopping List</h2>
+        <table id="list"></table>
+        <label><input type="button" value="Clear" onclick="ClearAll()">
+        * Delete all items</label>
+    </div>
+
+</form>
+
+<div>
+    <input type="button" value="Save" onclick="SaveItem()">
+    <input type="button" value="Update" onclick="ModifyItem()">
+    <input type="button" value="Delete" onclick="RemoveItem()">
+
+    <label>Item: <input type="text" name="name" id="name"></label>
+    <label>Quantity: <input type="text" name="data" id="data"></label>
+
+    <input type="button" value="Clear" onclick="ClearAll()">
+    
+    </div>
+</html>
