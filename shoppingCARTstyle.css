@@ -1,0 +1,76 @@
+:root {
+    --color-champagne: #EFD9CE;
+    --color-tiffany: #07BEB8;
+    --color-blizzard: #98DFEA;
+    --color-plum: #8F3985;
+    --color-space: #25283D;
+    --color-lightest: #FAFAFA;
+    --color-logo-basket: #F8E6C4;
+    --color-logo-topping: #FF89C0;
+}
+
+body {
+    background: var(--color-champagne);
+    color: var(--color-space);
+}
+
+h2 {
+    color: var(--color-plum);
+}S
+
+header {
+    background: var(--color-plum);
+}
+
+
+.branding {
+    color: var(--color-champagne);
+}
+
+@media (prefers-contrast: more) {
+    /* overwrites here */
+}
+
+:root {
+    --color-champagne: #EFD9CE;
+    --color-tiffany: #07BEB8;
+    --color-blizzard: #98DFEA;
+    --color-plum: #8F3985;
+    --color-space: #25283D;
+    --color-lightest: #FAFAFA;
+    --color-logo-basket: #F8E6C4;
+    --color-logo-topping: #FF89C0;
+
+    @media (prefers-contrast: more) {
+    /* let's overwrite our colors here */
+    }
+}
+
+:root {
+    /* original colors here */
+    @media (prefers-contrast: more) {
+        --color-plum: #591D52;
+    }
+}
+
+:root {
+    /*our original colors */
+    @media (prefers-contrast: more) {
+        --color-plum: #591D52;
+        --color-logo-topping: #FFAED3;
+    }
+}
+
+.container {
+    /*other styles*/
+    color: var(--color-logo-topping);
+    @media (prefers-contrast: more) {
+        color: var(--color-plum);
+    }
+}
+
+/*@media (prefers-contrast: more) 
+{
+    text-decoration:underline;
+}
+
